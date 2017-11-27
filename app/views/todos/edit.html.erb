@@ -1,14 +1,12 @@
-<h1>New To-do Item</h1>
-
+<h1>Edit Todo</h1>
+<hr>
 <%= render 'layouts/navbar' %>
   <%= yield %>
 
 <%= form_for @todo do |f| %>
-
   <%= f.label :title %>
   <%= f.text_field :title %>
   <br>
-
   <%= f.label :description %>
   <%= f.text_area :description %>
   <br>
@@ -16,7 +14,6 @@
   <%= f.text_field :urgency %>
   <br>
   <%= f.submit %>
-
 <% end %>
 
 <%= link_to 'Back', todos_path %>
