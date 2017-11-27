@@ -1,19 +1,27 @@
 <%= render 'layouts/navbar' %>
   <%= yield %>
 
+<hr>
+
 <h1>
   <%= @todo.title %>
 </h1>
 
 <h4>
+  Description:
+  <br>
   <%= @todo.description %>
 </h4>
 
 <h4>
+  Urgency:
+  <br>
   <%= @todo.urgency %>
 </h4>
 
 <h4>
+  Completed?
+  <br>
   <%= @todo.completed %>
 </h4>
 
